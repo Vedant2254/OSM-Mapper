@@ -1,8 +1,10 @@
 import React from 'react';
+import AppShell from './AppShell';
+// import AppShell from './AppShell-old';
 
 function App() {
   return (
-    <h1>Hello world!</h1>
+    <AppShell>Hello World!</AppShell>
   );
 }
 
