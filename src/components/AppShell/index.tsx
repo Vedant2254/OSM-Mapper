@@ -6,7 +6,7 @@ import ShellFooter from './ShellFooter';
 
 const { Content } = Layout;
 
-export default function AppShell({ children }: { children: string | JSX.Element } = { children: '' }) {
+export default function AppShell({ children }: { children: string | JSX.Element | JSX.Element[] } = { children: '' }) {
   // const [collapsed, setCollapsed] = useState(true);
 
   return (
@@ -15,7 +15,7 @@ export default function AppShell({ children }: { children: string | JSX.Element 
       <Layout>
         <ShellSider />
         <Layout>
-          <Content style={{ backgroundColor: 'lightblue' }}>
+          <Content style={{ backgroundColor: 'yellow', position: 'relative' }}>
             {children}
           </Content>
           <ShellFooter />

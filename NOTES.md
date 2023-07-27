@@ -19,3 +19,7 @@
 ## ESLint
 
 ## Jest for testing
+
+## Exporting / using types from typescript files
+
+## Redux thunk

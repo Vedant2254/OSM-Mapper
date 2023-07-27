@@ -1,10 +1,17 @@
 import React from 'react';
 import AppShell from './AppShell';
-// import AppShell from './AppShell-old';
+import MapComponent from './MapComponent';
+import RegionInfo from './RegionInfo';
 
 function App() {
   return (
-    <AppShell>Hello World!</AppShell>
+    <>
+      {/* <Button>120px to affix top</Button> */}
+      <AppShell>
+        <MapComponent />
+        <RegionInfo />
+      </AppShell>
+    </>
   );
 }
 

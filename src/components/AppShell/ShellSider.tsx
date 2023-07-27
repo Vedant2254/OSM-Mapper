@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import Sider from 'antd/es/layout/Sider';
 import { FaMapLocationDot } from 'react-icons/fa6';
-import { Menu } from 'antd';
+import { Menu, Space } from 'antd';
 
 export default function ShellSider() {
-  const [collapsed, setCollapsed] = useState(true);
+  const [collapsed, setCollapsed] = useState(false);
 
   return (
     <Sider
-      width="16rem"
-      theme="light"
+      width="18rem"
       collapsed={collapsed}
       onClick={() => setCollapsed(!collapsed)}
+      theme="light"
     >
+      <Space direction="horizontal" />
       <Menu
         items={[
           {
