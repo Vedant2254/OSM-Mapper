@@ -5,7 +5,9 @@ import { useSelector } from 'react-redux';
 import { MapContainer, TileLayer, useMap } from 'react-leaflet';
 
 function MapController() {
-  const region = useSelector((state: { [key: string]: any }): [number, number] => state.region);
+  const region = useSelector(
+    (state: { [key: string]: any }): [number, number] => state.region.coordinates,
+  );
   const map = useMap();
 
   useEffect(() => {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Button } from 'antd';
-import { actions } from '../store';
+import { actions } from '../store/regionSlice';
 import regions from '../utils/regions';
 
 export default function FormInput() {

@@ -5,12 +5,14 @@ import { FaGithub } from 'react-icons/fa6';
 
 export default function ShellFooter() {
   return (
-    <Footer style={{ backgroundColor: 'whitesmoke', padding: '1.3rem' }}>
-      <Link
-        href="https://github.com/Vedant2254/OSM-Mapper"
-      >
-        <FaGithub size="1.5em" color="black" />
-      </Link>
+    <Footer style={{ backgroundColor: '#1a232e', padding: '1.2rem' }}>
+      <div className="github-link-container">
+        <Link
+          href="https://github.com/Vedant2254/OSM-Mapper"
+        >
+          <FaGithub size="1.5em" color="white" />
+        </Link>
+      </div>
     </Footer>
   );
 }

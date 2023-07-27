@@ -29,3 +29,35 @@ body {
   font-size: x-large;
   font-weight: 700;
 }
+
+.region-info-card {
+  width: 20rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.github-link-container {
+  /* position: absolute; */
+  /* right: 50%; */
+  margin: auto;
+  width: 22px;
+}
+
+.profile-control-container {
+  position: absolute;
+  right: 0px;
+}
+
+.profile-control-btn {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.profile-control-btn-icon {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 3px;
+}

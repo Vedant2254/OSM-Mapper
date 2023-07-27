@@ -15,7 +15,7 @@ export default function AppShell({ children }: { children: string | JSX.Element 
       <Layout>
         <ShellSider />
         <Layout>
-          <Content style={{ backgroundColor: 'yellow', position: 'relative' }}>
+          <Content style={{ backgroundColor: 'whitesmoke', position: 'relative' }}>
             {children}
           </Content>
           <ShellFooter />
