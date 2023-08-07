@@ -1,10 +1,12 @@
-const regionalData: { [key: string]: {
+export type RegionalDataType = {
   currency: string,
   speed_unit: string,
   distance_unit: string,
   volume_unit: string,
   timezones: string,
-} } = {
+};
+
+const regionalData: { [key: string]: RegionalDataType } = {
   India: {
     currency: 'Indian Rupee',
     speed_unit: 'kilometers per hour',
@@ -26,14 +28,6 @@ const regionalData: { [key: string]: {
     volume_unit: 'liters',
     timezones: 'UTC+00:00, UTC+01:00',
   },
-};
-
-export type RegionalDatatype = {
-  currency: string,
-  speed_unit: string,
-  distance_unit: string,
-  volume_unit: string,
-  timezones: string,
 };
 
 export default regionalData;

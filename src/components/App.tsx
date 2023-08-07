@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AppShell from './AppShell';
 import MapComponent from './MapComponent';
 import RegionInfo from './RegionInfo';
 
 function App() {
+  useEffect(() => {
+    const resizeTimeout = setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 500);
+
+    return () => {
+      clearTimeout(resizeTimeout);
+    };
+  }, []);
+
   return (
-    <>
-      {/* <Button>120px to affix top</Button> */}
-      <AppShell>
-        <MapComponent />
-        <RegionInfo />
-      </AppShell>
-    </>
+    <AppShell>
+      <MapComponent />
+      <RegionInfo />
+    </AppShell>
   );
 }
 

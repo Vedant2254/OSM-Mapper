@@ -1,11 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Card } from 'antd';
-import { RegionalDatatype } from '../utils/regionalData';
+import { RegionalDataType } from '../utils/regionalData';
 
 export default function RegionInfo() {
   const regionalData = useSelector(
-    (state: { [key: string]: any }): RegionalDatatype => state.region.regionalData,
+    (state: { [key: string]: any }): RegionalDataType => state.region.regionalData,
   );
 
   return (

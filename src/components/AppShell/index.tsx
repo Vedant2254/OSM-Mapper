@@ -7,8 +7,6 @@ import ShellFooter from './ShellFooter';
 const { Content } = Layout;
 
 export default function AppShell({ children }: { children: string | JSX.Element | JSX.Element[] } = { children: '' }) {
-  // const [collapsed, setCollapsed] = useState(true);
-
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <ShellHeader />
